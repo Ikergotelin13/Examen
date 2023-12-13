@@ -1,6 +1,6 @@
 # Examen Diciembre 2023
 Diseño de Interfaces Web
-###Criterios de evaluación
+### Criterios de evaluación
 1. Similitud con el diseño planteado.
 2. Funcionalidad del diseño segun lo planteado en el ejercicio.
 3. Simplicidad del código.
