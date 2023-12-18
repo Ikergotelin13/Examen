@@ -1,113 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen Desarrollo de Interfaces Web</title>
-    <meta name="author">{{NOMBRE DEL ALUMNO}}</meta>
+    <meta name="author">
+    </meta>
+    <link rel="stylesheet" href="./static/style.css">
 </head>
+
 <body>
-    
-            ...
-            <img src="https://www.cesurformacion.com/uploads/media/logo-small/09/19-cesur-fp.svg?v=6-0" alt="Logo Cesur">
-            ...
+    <div class="container">
+        <nav class="sidebar">
+            <img src="./static/logo.png" alt="" id="logo">
+            <a href="#" class="opciones-menu">Listado entradas</a>
+            <a href="#" class="opciones-menu btn-nueva-entrada">Nueva entrada</a>
+            <a href="#" class="opciones-menu">Clientes</a>
+            <a href="#" class="opciones-menu">Herramientas</a>
+            <hr>
+            <a href="#" id="salir">Salir</a>
+        </nav>
+        <main>
+            <h1 id="titulo">Listado de entradas</h1>
+            <table>
+                <thead>
+                    <th>Matrícula</th>
+                    <th>Modelo</th>
+                    <th>Cliente</th>
+                    <th>Fecha de entrada</th>
+                    <th>Fecha de salida</th>
+                    <th>Tarifa</th>
+                    <th>Coste total</th>
+                    <th>Acciones</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> ABC123</td>
+                        <td>Toyota Camry</td>
+                        <td>Juan Pérez</td>
+                        <td>2023-01-05</td>
+                        <td> 2023-01-10</td>
+                        <td class="tarifa"> <button class="tarifa-botones">Estandar</button></td>
+                        <td>250€</td>
+                        <td><button class="borrar">borrar</button></td>
 
-           Listado de entradas
-           
-                
-                    Matrícula
-                    Modelo
-                    Cliente
-                    Fecha de entrada
-                    Fecha de salida
-                    Tarifa
-                    Coste total
-                    
-                    ABC123
-                    Toyota Camry
-                    Juan Pérez
-                    2023-01-05
-                    2023-01-10
-                    Estándar
-                    250€
-                   
-                    XYZ789
-                    Honda Civic
-                    Maria Rodríguez
-                    2023-02-12
-                    2023-02-18
-                    Premium
-                    280€
 
-                    DEF456
-                    Ford Mustang
-                    Carlos Gómez
-                    2023-03-20
-                    2023-03-25
-                    Oferta
-                    350€
-
-                    GHI789
-                    Chevrolet Malibu
-                    Ana López
-                    2023-04-08
-                    2023-04-15
-                    Estándar
-                    385€
-
-                    JKL012
-                    Nissan Altima
-                    Luis García
-                    2023-05-14
-                    2023-05-20
-                    Premium
-                    270€          
-
-                    MNO345
-                    Hyundai Sonata
-                    Sofía Martinez
-                    2023-06-02
-                    2023-06-08
-                    Estándar
-                    288€
-                    
-                    PQR678
-                    Kia Forte
-                    Pedro Sánchez
-                    2023-07-11
-                    2023-07-18
-                    Oferta
-                    294€
-                    
-                    STU901
-                    Subaru Outback
-                    Marta Torres
-                    2023-08-19
-                    2023-08-25
-                    Premium
-                    360€
-                
-                    VWX234
-                    Mercedes-Benz C-Class
-                    Ricardo Vargas
-                    2023-09-27
-                    2023-10-03
-                    Estándar
-                    480€
-                
-                    YZA567
-                    Audi A4
-                    Isabel López
-                    2023-11-05
-                    2023-11-12
-                    Oferta
-                    525€
-                            
-            ...
-        
-            Creado por {{NOMBRE DEL ALUMNO}}
-    ...            
-
+                    </tr>
+                    <tr>
+                        <td> XYZ789</td>
+                        <td> Honda Civic</td>
+                        <td>Maria Rodríguez</td>
+                        <td>2023-02-12</td>
+                        <td>2023-02-18</td>
+                        <td class="tarifa"> <button class="tarifa-botones">Premium</button></td>
+                        <td>280€</td>
+                        <td><button class="borrar">borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>DEF456</td>
+                        <td> Ford Mustang</td>
+                        <td>Carlos Gómez</td>
+                        <td>2023-03-20</td>
+                        <td>2023-03-25</td>
+                        <td class="tarifa"> <button class="tarifa-botones">Oferta</button></td>
+                        <td> 350€</td>
+                        <td><button class="borrar">borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>GHI789</td>
+                        <td>Chevrolet Malibu</td>
+                        <td>Ana López</td>
+                        <td>2023-04-08</td>
+                        <td>2023-04-15</td>
+                        <td class="tarifa"> <button class="tarifa-botones">Estandar</button></td>
+                        <td>385€</td>
+                        <td><button class="borrar">borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>JKL012</td>
+                        <td> Nissan Altima</td>
+                        <td>Luis García</td>
+                        <td>2023-05-14</td>
+                        <td>2023-05-20</td>
+                        <td class="tarifa"> <button class="tarifa-botones">Premium</button></td>
+                        <td>270€</td>
+                        <td><button class="borrar">borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td> MNO345</td>
+                        <td>Hyundai Sonata</td>
+                        <td>Sofía Martinez</td>
+                        <td>2023-06-02</td>
+                        <td>2023-06-08</td>
+                        <td class="tarifa"> <button class="tarifa-botones">Estandar</button></td>
+                        <td> 288€</td>
+                        <td><button class="borrar">borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>PQR678</td>
+                        <td> Kia Forte</td>
+                        <td>Pedro Sánchez</td>
+                        <td>2023-07-11</td>
+                        <td>2023-07-18</td>
+                        <td class="tarifa"> <button class="tarifa-botones">Oferta</button></td>
+                        <td>294€</td>
+                        <td><button class="borrar">borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>STU901</td>
+                        <td>Subaru Outback</td>
+                        <td>Marta Torres</td>
+                        <td>2023-08-19</td>
+                        <td>2023-08-25</td>
+                        <td class="tarifa"> <button class="tarifa-botones">Premium</button></td>
+                        <td>360€</td>
+                        <td><button class="borrar">borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>VWX234</td>
+                        <td>Mercedes-Benz C-Class</td>
+                        <td>Ricardo Vargas</td>
+                        <td>2023-09-27</td>
+                        <td>2023-10-03</td>
+                        <td class="tarifa"> <button class="tarifa-botones">Estandar</button></td>
+                        <td>480€</td>
+                        <td><button class="borrar">borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>YZA567</td>
+                        <td>Audi A4</td>
+                        <td>Isabel López</td>
+                        <td>2023-11-05</td>
+                        <td>2023-11-12</td>
+                       <td class="tarifa"> <button class="tarifa-botones">Oferta</button></td>
+                        <td>525€</td>
+                        <td><button class="borrar">borrar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="creado-por">Creado por Iker Roca Pendón</p>
+            <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup">
+                <h2>Insertar nuevo coche</h2>
+                <form id="nuevaEntradaForm">
+                    <div>
+                        <div class="contenedor-registros">
+                            <label for="matricula">Matrícula</label>
+                            <input type="text" id="matricula" name="matricula" required>
+                        </div>
+                        <div class="contenedor-registros">
+                            <label for="modelo">Modelo</label>
+                            <input type="text" id="modelo" name="modelo" required>
+                        </div>
+                        <div class="contenedor-registros">
+                            <label for="cliente">Cliente</label>
+                            <input type="text" id="cliente" name="cliente" required>
+                        </div>
+                        <div class="contenedor-registros">
+                            <label for="fechaEntrada">Fecha de entrada</label>
+                            <input type="date" id="fechaEntrada" name="fechaEntrada" required>
+                        </div>
+                        <div class="contenedor-registros">
+                            <label for="fechaSalida">Fecha de salida</label>
+                            <input type="date" id="fechaSalida" name="fechaSalida" required>
+                        </div>
+                        <div class="contenedor-registros">
+                            <label for="tarifa">Tarifa</label>
+                            <select id="tarifa" name="tarifa" required>
+                                <option value="estandar">Estándar</option>
+                                <option value="premium">Premium</option>
+                                <option value="oferta">Oferta</option>
+                            </select>
+                        </div>
+                        <button type="submit">Insertar</button>
+                        <button type="button" id="boton-cancelar">Cancelar</button>
+                </form>
+                <a href="#" class="cerrar-popup" id="cerrar-popup">&times;</a>
+            </div>
+    </div>
+    </main>
+    </div>
+    <script src="./static/app.js"></script>
 </body>
+
 </html>
